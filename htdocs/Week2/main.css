@@ -1,0 +1,17 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: rgb(27, 27, 69);
+    font-size: 4rem;
+}
+p, input, button, span {
+    font-size: 1.5rem;
+}
+p {
+    font-weight: 800;
+}
+label {
+    font-size: 1.75rem; 
+    font-weight: 500;
+}
