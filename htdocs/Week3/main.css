@@ -12,7 +12,7 @@ p, input, button, span {
     font-size: 1.5rem;
 }
 p {
-    font-weight: 800;
+    font-weight: 500;
 }
 label {
     font-size: 1.75rem; 
@@ -22,14 +22,21 @@ th {
     white-space: nowrap;
     text-align: left;
     border-bottom: 3px solid rgb(61, 60, 60);
-
 }
 td {
     text-align: left;
     border-bottom: 1px solid rgb(61, 60, 60);
     padding: 1rem;
 }
+td.crs_id {
+    font-size: 1.5em;
+    font-weight: 800;
+    white-space: nowrap;
 
+}
+td.crs_title {
+    font-weight: 800;
+}
 td.prereq, td.crs_hours {
     color: purple;
     font-size: larger;
@@ -37,9 +44,7 @@ td.prereq, td.crs_hours {
 td.crs_desc {
     font-style: italic;
 }
-td.crs_id, td.crs_title {
-    font-weight: 800;
-}
+
 p.db_msg {
     color: limegreen;
     text-align: right;
