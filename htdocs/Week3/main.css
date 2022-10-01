@@ -1,0 +1,51 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgb(193, 193, 193);;
+}
+h1 {
+    color: rgb(27, 27, 69);
+    font-size: 4rem;
+}
+p, input, button, span {
+    font-size: 1.5rem;
+}
+p {
+    font-weight: 800;
+}
+label {
+    font-size: 1.75rem; 
+    font-weight: 500;
+}
+th {
+    white-space: nowrap;
+    text-align: left;
+    border-bottom: 3px solid rgb(61, 60, 60);
+
+}
+td {
+    text-align: left;
+    border-bottom: 1px solid rgb(61, 60, 60);
+    padding: 1rem;
+}
+
+td.prereq, td.crs_hours {
+    color: purple;
+    font-size: larger;
+}
+td.crs_desc {
+    font-style: italic;
+}
+td.crs_id, td.crs_title {
+    font-weight: 800;
+}
+p.db_msg {
+    color: limegreen;
+    text-align: right;
+}
+.db_msg_div {
+    background-color: rgb(183, 183, 183);
+    position: sticky;
+    top:1px;
+}
