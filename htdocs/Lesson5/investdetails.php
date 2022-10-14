@@ -31,7 +31,7 @@
     $originalamount = $newamount;
     ?>
     <h3>Investment Details</h3>
-    <?php echo "This investment schedule represents an initial investment of $" . number_format($newamount) .
+    <?php echo "This investment schedule represents an initial investment of $" . fmt($newamount) .
     " for a period of " . $years . " years at ". $rate . "%.";
     if ($hasAddAmount) {
         echo "<br>An additional annual investment of $" . fmt($extra) . " has been selected.";
