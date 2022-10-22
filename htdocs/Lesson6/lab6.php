@@ -41,6 +41,15 @@ function minMaxAvg($n1, $n2){
            "Maximum: " . max($n1, $n2). "<br>" .
            "Average: " . $avg . "<br>";
 }
+function getHours($x) {
+    $now = date_create();
+    $then = date('Y-m-d H:i:s', $x);
+    $then = date_create($then);
+    $interval = $now->diff($then);
+    $hours = $interval->h;
+    $hours += $interval->d*24;
+    return $hours . " hours";
+}
 ?>
 
 
@@ -90,7 +99,11 @@ function minMaxAvg($n1, $n2){
         <p>9.<i>Output the following date and time in two different formats.</i><br>
             <?php echo date('m-d-Y', $dateOutput); ?><br>
             <?php echo date('l, F d, Y', $dateOutput); ?>
-
+        </p>
+        <p>10. <i>Using the date/time values from the previous problem, calculate 
+                  how many hours there are from now until then.</i><br>
+            <?php echo getHours($dateOutput);
+            ?>
         </p>
 
     </body>

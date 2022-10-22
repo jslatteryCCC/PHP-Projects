@@ -57,7 +57,7 @@
   <p>9.
   <i>Output the following date and time in two different formats.</i><br>
   <b>Year</b><br>
-  <input type="text" name="year" value="2021" readonly><br><br>
+  <input type="text" name="year" value="2022" readonly><br><br>
   <b>Month</b><br>
   <input type="text" name="month" value="11" readonly><br><br>
   <b>Day</b><br>
