@@ -1,0 +1,154 @@
+:root {
+    padding: 0;
+    margin: 0;
+}
+/***nav***/
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: lightgray;
+}
+.icon {
+    margin: .2rem 0 0 .2rem;
+    padding: auto;
+}
+.nav_username {
+    color: #414141;
+    display: inline;
+    float: right;
+    margin: 1em 2em 0 0;
+}
+html, body {
+    height: 100%;
+    text-shadow: #121212;
+    
+}
+body {
+    background-color: #414141;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 0;
+}
+.main_container {
+    display: flex;
+    flex: 1 0 auto;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    padding-bottom: 52px;
+}
+h1{
+    margin: 0 auto 5px auto;
+}
+
+
+/***landing***/
+
+.ulogo_container {
+    width: 100%;
+    margin: 0;
+}
+.ulogo {
+    width: 50%;
+    margin:0 25%;
+
+}
+.title_container {
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    color: white;
+}
+.button_container {
+    text-align: center;
+}
+button {
+    display: block;
+    width: 20%;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #414141;
+}
+button:hover {
+    background-color: #414141;
+    border: 2px solid white;
+    color: white;
+}
+
+/***signup***/
+
+.signup_form_container, .login_form_container {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    text-align: center;
+}
+.signup {
+    margin: 20px 25% 0 20%;
+    display: grid;
+    max-width: 60%;
+    grid-template-columns: [labels] 1fr [controls] 1fr;
+    grid-auto-flow: row;
+    gap: .8em;
+    white-space: nowrap;
+}
+.signup input{
+    font-size: 2rem;
+}
+.signup > label {
+    grid-column: labels;
+    grid-row: auto;
+    font-size: 2rem;
+    text-align: right;
+    display: inline;
+    color: white;
+}
+.submit {
+    width: 150px;
+    grid-column: controls;
+    grid-row: 10;
+    display: block;
+    margin: auto 50%;
+
+}
+.goback {
+    width: 150px;
+    grid-column: labels;
+    grid-row: 10;
+    display: block;
+    margin: auto 50%;
+}
+
+/***validation***/
+
+#message {
+    grid-column: controls;
+    grid-row: 11;
+    font-family: Arial, Helvetica, sans-serif;
+    display:none;
+    background: #414141;
+    color: white;
+    width: 25%;
+
+}
+.valid {
+    color: green;
+}
+.invalid {
+    color: red;
+}
+.footer {
+    margin-top: -52px;
+    background-color: #121212;
+    color: #414141;
+}
+.login_status {
+    font-size: 10em;
+    color: white;
+}
