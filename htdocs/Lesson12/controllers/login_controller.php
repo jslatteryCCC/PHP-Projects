@@ -22,6 +22,8 @@ if($user_id == NULL || $password == NULL) {
     if (validate_login($user_id, $password)) {
         setcookie('username', $user_id, 0, '/');
         $_SESSION["login_status"] = TRUE;
+        $_SESSION["username"] = $user_id;
+        $_SESSION["password"] = $password;
         header("Location: ../index.php");
     } else {
         $_SESSION["login_status"] = FALSE;

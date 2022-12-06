@@ -1,7 +1,10 @@
 <?php
-    $title = "Slatts U.";
-    include 'view/shared/header.php';
     session_start();
+    $title = "Slatts U.";
+    $_session_user = $_SESSION['username'];
+    $_session_pass = $_SESSION['password'];
+    include 'view/shared/header.php';
+
 ?>
 <body>
     <div class="main_container">
@@ -12,7 +15,8 @@
                     echo "Login Process Failed.";
                 }
                 else if($_SESSION['login_status'] == TRUE){
-                    echo "Welcome $username.";
+                    echo "Welcome $_session_user.<br>";
+                    echo "Your password is $_session_pass.";
                     }
                 else if($_SESSION['login_status'] == FALSE)
                     echo "Login Unsuccessful. Please try again.";
